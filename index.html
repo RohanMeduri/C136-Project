@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ADV-C135: AI OBJECT FINDER </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="background.png">
+    <center>
+    <h3 class="btn btn-primary heading">AI Object Finder 
+        <br> 
+        <span class="note">The input name which you give should match the name in Cocossd databases.</span>
+    </h3>
+    <br>
+    <br>
+    <input id="item_input" class="input" placeholder="Enter the item that the model will search for here">
+    <br>
+    <br>
+    <button class="btn btn-success" onclick="start()">Start</button>
+    <br>
+    <h3 id="status" class="btn btn-danger"></h3>
+    <h3 id="object_found" class="btn btn-warning"></h3>
+    </center>
+    
+</body>
+</html>
